@@ -1,0 +1,18 @@
+import pyautogui as pg
+import time
+x = input("Во сколько приём у стоматолога?")
+y = input("Завтра или послезавтра?")
+pg.moveTo(1428, 905)
+pg.click(button='right')
+time.sleep(1)
+pg.moveTo(1475, 823)
+pg.click()
+time.sleep(1)
+pg.moveTo(1231, 978)
+pg.click()
+time.sleep(1)
+pg.moveTo(1451, 950)
+pg.click()
+pg.click()
+time.sleep(2)
+pg.write(f"Stomatolag {y} v {x}")
